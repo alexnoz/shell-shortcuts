@@ -13,5 +13,5 @@ Command (Git) | Description | Usage
 `gundo` :gun:| Undo last `n` commits. | `gundo [-h] [<n>]`<br>`gundo` - same as `git reset --soft HEAD^`
 `gunstage` :gun:| Unstage files. | `gunstage <file> [<file>...]`
 **Command (others)** |
-l | Same as `ls -lA --color` | `l [<directory>]`
-rmd | Remove a directory | `rmd <directory>`
+`l` | Same as `ls -lA --color` | `l [<directory>]`
+`rmd` | Remove a directory | `rmd <directory>`
