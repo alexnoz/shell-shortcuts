@@ -1,0 +1,13 @@
+#! /usr/bin/bash
+
+case "$1" in
+  -a|--all)
+    git reset --hard HEAD ;;
+  *)
+    if test "$#" = 0; then
+      echo "No arguments were given. 
+If you want to discard all changes since the last commit pass the '--all' option explicitly.";
+      exit 1;
+    fi
+    git checkout -- "$@" ;;
+esac

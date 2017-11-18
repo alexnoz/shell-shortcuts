@@ -1,0 +1,9 @@
+#! /usr/bin/bash
+
+case "$1" in
+  -a|--all)
+    git commit -am "$2" ;;
+  *)
+    git commit -m "$1" ;;
+esac
+

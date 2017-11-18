@@ -1,0 +1,8 @@
+#! /usr/bin/bash
+
+if test ! -z "$1"; then
+  git reset $(git commit-tree HEAD^{tree} -m "$1")
+else
+  echo Please, provide a commit message
+  exit 1
+fi

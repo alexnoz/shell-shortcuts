@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+
+git log --all --graph --pretty=format:"%C(bold yellow)%h%Creset%Cgreen %an%Creset%C(blue) %ar %C(bold white)%s%C(red)%d" "$@"
+
