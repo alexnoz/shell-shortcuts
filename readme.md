@@ -14,3 +14,4 @@ Command (Git) | Description | Usage
 `gunstage` :gun:| Unstage files. | `gunstage <file> [<file>...]`
 **Command (others)** |
 l | Same as `ls -lA --color` | `l [<directory>]`
+rmd | Remove a directory | `rmd <directory>`

@@ -1,0 +1,11 @@
+#! /usr/bin/bash
+
+if test -z "$1"; then
+  echo Please, provide a directory to remove.
+  exit 1
+elif test ! -d "$1"; then
+  echo "$1" is not a directory.
+  exit 1
+fi
+
+rm "$1" -rf
