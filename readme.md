@@ -12,6 +12,7 @@ Command (Git) | Description | Usage
 `gsqall` | Creates a new commit object based on provided tree object. Basically, "squashes" all commits in a branch. | `gsqall <message>`
 `gundo` :gun:| Undo last `n` commits. | `gundo [-h] [<n>]`<br>`gundo` - same as `git reset --soft HEAD^`
 `gunstage` :gun:| Unstage files. | `gunstage <file> [<file>...]`
+`gview` | Show changes introduced by a commit. | `gview [<commit>]`
 **Command (others)** |
 `l` | Same as `ls -lA --color` | `l [<directory>]`
 `rmd` | Remove a directory | `rmd <directory>`
