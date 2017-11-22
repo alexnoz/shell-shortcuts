@@ -1,8 +1,5 @@
 #! /usr/bin/bash
 
-if test -z "$1"; then
-  echo Please, provide a commit message
-  return 1
-fi
+. helpers
 
-git commit -am "$1"
+validate_message "$1" && git commit -am "$1"
