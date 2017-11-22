@@ -1,0 +1,8 @@
+#! /usr/bin/bash
+
+if test -z "$1"; then
+  echo Please, provide a commit message
+  return 1
+fi
+
+git commit -am "$1"
